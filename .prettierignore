@@ -1,0 +1,28 @@
+# dependencies
+node_modules
+
+# next.js
+.next
+out
+
+# build
+build
+dist
+
+# coverage
+coverage
+
+# vercel
+.vercel
+
+# env
+.env
+.env.*
+
+# lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# misc
+.DS_Store
