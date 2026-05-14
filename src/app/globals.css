@@ -1,15 +1,69 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f5f5;
+  --foreground: #1a1a1a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Pretendard */
+  --font-pretendard:
+    "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+
+  --font-sans: var(--font-pretendard);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Primary Color */
+  --color-pf-primary-050: #f9f5ff;
+  --color-pf-primary-100: #ebdbff;
+  --color-pf-primary-200: #d9b9ff;
+  --color-pf-primary-300: #b691fa;
+  --color-pf-primary-400: #a480f7;
+  --color-pf-primary-500: #805cec;
+  --color-pf-primary-600: #693fcf;
+  --color-pf-primary-700: #5929ba;
+  --color-pf-primary-800: #4805a3;
+  --color-pf-primary-900: #2e007a;
+
+  /* Secondary Color */
+  --color-pf-secondary-050: #fff5f7;
+  --color-pf-secondary-100: #ffd8e2;
+  --color-pf-secondary-200: #ffb1c6;
+  --color-pf-secondary-300: #f77ca3;
+  --color-pf-secondary-400: #f26394;
+  --color-pf-secondary-500: #d13e76;
+  --color-pf-secondary-600: #b5135d;
+  --color-pf-secondary-700: #9a0047;
+  --color-pf-secondary-800: #77002d;
+  --color-pf-secondary-900: #550016;
+
+  /* Accent Color */
+  --color-pf-accent-050: #fdf7dc;
+  --color-pf-accent-100: #f8e485;
+  --color-pf-accent-200: #dbc664;
+  --color-pf-accent-300: #b9a338;
+  --color-pf-accent-400: #aa9420;
+  --color-pf-accent-500: #8b7500;
+  --color-pf-accent-600: #715c00;
+  --color-pf-accent-700: #5f4a00;
+  --color-pf-accent-800: #4b3600;
+  --color-pf-accent-900: #382200;
+
+  /* Gray Color */
+  --color-pf-gray-050: #f7f7f7;
+  --color-pf-gray-100: #e1e1e1;
+  --color-pf-gray-200: #c6c6c6;
+  --color-pf-gray-300: #a3a3a3;
+  --color-pf-gray-400: #959595;
+  --color-pf-gray-500: #767676;
+  --color-pf-gray-600: #5d5d5d;
+  --color-pf-gray-700: #4c4c4c;
+  --color-pf-gray-800: #393939;
+  --color-pf-gray-900: #262626;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +76,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
