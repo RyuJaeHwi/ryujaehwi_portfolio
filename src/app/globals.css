@@ -101,7 +101,6 @@ body {
   min-height: 100vh;
   color: var(--foreground);
   font-family: var(--font-sans);
-
   background-color: var(--pf-bg-base);
   background-image: var(--pf-bg-gradient-pink), var(--pf-bg-gradient-purple);
   background-repeat: no-repeat;
