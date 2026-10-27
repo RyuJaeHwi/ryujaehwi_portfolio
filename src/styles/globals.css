@@ -18,6 +18,26 @@
     rgba(46, 0, 122, 0.6) 0%,
     rgba(46, 0, 122, 0) 100%
   );
+
+  /* Typography - mobile / tablet */
+  --pf-title-lg: 2rem; /* 32px */
+  --pf-title-md: 1.75rem; /* 28px */
+  --pf-title-sm: 1.25rem; /* 20px */
+  --pf-text-lg: 1rem; /* 16px */
+  --pf-text-md: 0.875rem; /* 14px */
+  --pf-text-sm: 0.75rem; /* 12px */
+}
+
+/* Typography - PC (1024px~) */
+@media (width >= 64rem) {
+  :root {
+    --pf-title-lg: 3rem; /* 48px */
+    --pf-title-md: 2.25rem; /* 36px */
+    --pf-title-sm: 1.5rem; /* 24px */
+    --pf-text-lg: 1.125rem; /* 18px */
+    --pf-text-md: 1rem; /* 16px */
+    --pf-text-sm: 0.875rem; /* 14px */
+  }
 }
 
 @theme inline {
@@ -82,13 +102,6 @@
   --color-pf-gray-900: #262626;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 html,
 body {
   min-height: 100%;
@@ -108,4 +121,41 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100vh;
   background-attachment: fixed;
+}
+
+/* Typography utilities */
+@utility pf-title-lg {
+  font-size: var(--pf-title-lg);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@utility pf-title-md {
+  font-size: var(--pf-title-md);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@utility pf-title-sm {
+  font-size: var(--pf-title-sm);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@utility pf-text-lg {
+  font-size: var(--pf-text-lg);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+@utility pf-text-md {
+  font-size: var(--pf-text-md);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+@utility pf-text-sm {
+  font-size: var(--pf-text-sm);
+  font-weight: 400;
+  line-height: 1.4;
 }
